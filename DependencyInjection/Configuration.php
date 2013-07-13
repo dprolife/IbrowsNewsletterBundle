@@ -97,8 +97,9 @@ class Configuration implements ConfigurationInterface
                             ->addDefaultsIfNotSet()
                             ->children()
                                 ->scalarNode('list')->defaultValue('IbrowsNewsletterBundle:Subscriber:list.html.twig')->end()
-                            ->end()
-                        ->end()
+                                ->scalarNode('create')->defaultValue('IbrowsNewsletterBundle:Subscriber:create.html.twig')->end()
+							->end()
+						->end()
 
                         ->arrayNode('statistic')
                             ->addDefaultsIfNotSet()
