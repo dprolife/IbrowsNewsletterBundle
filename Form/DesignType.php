@@ -14,11 +14,11 @@ class DesignType extends AbstractType
     {
         $builder
             ->add('name')
-            ->add('content', null, array(
+            ->add('content', 'textarea', array(
                 'required' => false,
                 'attr' => array(
 	                'class' => 'tinymce',
-	                'data-theme' => 'advanced'
+	                'data-theme' => 'medium'
                 )
             ))
         ;
