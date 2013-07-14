@@ -16,7 +16,10 @@ class DesignType extends AbstractType
             ->add('name')
             ->add('content', null, array(
                 'required' => false,
-                //'attr' => array('class' => 'tinymce')
+                'attr' => array(
+	                'class' => 'tinymce',
+	                'data-theme' => 'advanced'
+                )
             ))
         ;
     }
