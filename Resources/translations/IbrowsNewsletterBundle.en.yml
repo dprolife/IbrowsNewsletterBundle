@@ -1,0 +1,114 @@
+newsletter:
+  subscriber: Edit Subscriber for Newsletter "%name%"
+  unsubscribe: Unsubscribe E-Mail "%email%"
+  settings: Edit settings for Newsletter "%name%"
+  name: Name
+  created_at: Created at
+  design: Design
+  testmail: Test Shipping
+  overview: Survey
+  statistic: Statistics
+  design: Design
+  block:
+    clone: Clone
+    add: Add
+    new: New Block
+    metadata:
+        edit: Edit metadata
+    provider:
+      'ibrows_newsletter.block.provider.textarea':
+        name: Text
+      'ibrows_newsletter.block.provider.image':
+        name: Image
+      'ibrows_newsletter.block.provider.textareaandimage':
+        name: Text with image
+        textwidth: Text width
+        imagewidth: Image width
+  layout:
+    index:
+      title: Welcome
+  wizard:
+    meta:       Meta
+    edit:       Edit
+    subscriber: Subscriber
+    settings:   Settings
+    summary:    Summary
+  create: New Newsletter
+  list: Newsletter
+  edit: Edit Newsletter "%name%"
+  summary: Summary Newsletter "%name%"
+  blocks: Blocks
+  dialog:
+    abort: Abort
+  gendertitle:
+    male:
+      formal: Dear Mr %subscriber.lastname%
+      informal: Hello %subscriber.firstname%
+    female:
+      formal: Dear Mrs %subscriber.lastname%
+      informal: Hello %subscriber.firstname%
+  error:
+    mail: "The shipment was not possible: %message%"
+  generate:
+    mail: Start Shipping
+
+mandant:
+  admin: Settings
+  edit: Edit %name% Client
+  general: General Settings
+  settings: Standard mail settings
+
+user:
+  logout: Logout
+
+subscriber:
+  list: Subscribers
+  firstname: Firstname
+  lastname: Lastname
+  company: Company
+  email: E-Mail
+  groups: Groups
+  multiselect:
+    selectable: Existing Recipients
+    selected:   Selected Recipients
+  create:
+      button: Add
+
+design:
+  create: Create
+  list: Templates
+  preview: Preview
+  name: Name
+  created_at: Created at
+  edit: Edit
+
+email: E-Mail
+
+statistic:
+  title: Statistics for newsletter: "%name%"
+  show: Show
+  readpiechart:
+    read: Read
+    unread: Unread
+  jobpiechart:
+    status:
+      working: Working
+      onhold: On hold
+      ready: Ready
+      completed: Completed
+      error: Error
+
+form:
+  save: Save
+  cancel: Cancel
+  send: Send
+  testmail: Testmail
+
+security:
+  login:
+    mandant:  Client
+
+layout:
+  header:
+    title:
+      newsletterbundle: BonaVita Newsletter

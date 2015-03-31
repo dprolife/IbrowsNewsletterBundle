@@ -1,0 +1,43 @@
+Subject: Subject
+Sendermail: Sender mail
+Sendername: Sender name
+Returnmail: Return mail
+Subscribers: Subscribers
+Content: Content
+Name: Name
+Subscriber: Subscriber
+Email: E-Mail
+Groups: Groups
+Default: Default
+testemail: Test E-Mail Adress
+testsubscriber: Use contact data from
+Textwidth: Text-width
+Imagewidth: Image-width
+
+Username: Username
+Password: Password
+Host: Host
+Port: Port
+Encryption: Encryption
+Authmode: Authmode
+Interval: Intervall
+Starttime: Start time
+
+Renderername: Renderer name (Service-Id)
+
+form:
+  save: Save
+  continue: Continue
+
+newsletter:
+  continue: Continue
+  block:
+    clone: Clone
+    provider:
+      'ibrows_newsletter.block.provider.textareaandimage':
+        textwidth: Textwidth
+        imagewidth: Imagewidth
+    name: Name
+    new: New Block
+  blocks:
+    save: Save

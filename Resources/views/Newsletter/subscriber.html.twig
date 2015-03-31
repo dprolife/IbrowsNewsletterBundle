@@ -19,11 +19,13 @@
     </form>
 
 	<script type="text/javascript">
-		jQuery(document).ready(function() {
-			jQuery('select').multiSelect({
-				selectableHeader: "{{ 'subscriber.multiselect.selectable'|trans }}",
-				selectedHeader:  "{{ 'subscriber.multiselect.selected'|trans }}"
-			});
-		});
+        (function($){
+            $(document).ready(function() {
+                $('select').multiSelect({
+                    selectableHeader: "{{ 'subscriber.multiselect.selectable'|trans }}",
+                    selectedHeader:  "{{ 'subscriber.multiselect.selected'|trans }}"
+                });
+            });
+        })(jQuery);
 	</script>
 {% endblock %}
