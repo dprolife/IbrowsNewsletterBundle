@@ -48,7 +48,7 @@
             }
         });
 
-        jQuery(function () {
+        $(function () {
             $edit.ready();
         });
     </script>
@@ -107,7 +107,7 @@
                                             {% if blockProviderOptionOptions.required|default(true) == true %}required="required"{% endif %}
                                             type="text"
                                             name="option[{{ blockProviderOptionKey }}]"
-                                            >
+                                            />
                                 </div>
                             {% endfor %}
                             <div>
@@ -148,7 +148,5 @@
             {{ _self.displayformcontrols() }}
 
         </form>
-
-        <di
     </div>
 {% endblock %}
