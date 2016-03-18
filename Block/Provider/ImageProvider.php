@@ -8,6 +8,7 @@ use Symfony\Component\HttpFoundation\Request;
 
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\Filesystem\Filesystem;
+use Symfony\Component\HttpFoundation\RequestStack;
 
 class ImageProvider extends AbstractProvider
 {
@@ -18,7 +19,7 @@ class ImageProvider extends AbstractProvider
 
     const PROVIDER_OPTION_FILENAME = 'filename';
 
-    public function __construct(Request $request, $uploadDirectory, $publicPath)
+    public function __construct(RequestStack $requestStack, $uploadDirectory, $publicPath)
     {
         if (!is_dir($uploadDirectory)) {
             $filesystem = new Filesystem();
@@ -29,7 +30,7 @@ class ImageProvider extends AbstractProvider
             throw new \InvalidArgumentException("No write access on directory $uploadDirectory");
         }
 
-        $this->request = $request;
+        $this->request = $requestStack->getCurrentRequest();
         $this->uploadDirectory = realpath($uploadDirectory);
         $this->publicPath = $publicPath;
     }
