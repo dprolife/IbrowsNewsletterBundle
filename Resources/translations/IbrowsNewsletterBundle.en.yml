@@ -85,7 +85,7 @@ design:
 email: E-Mail
 
 statistic:
-  title: Statistics for newsletter: "%name%"
+  title: "Statistics for newsletter: %name%"
   show: Show
   readpiechart:
     read: Read
